@@ -1,0 +1,22 @@
+Comunicacion entre microservicios
+
+
+los 2 microservicios usan config-server y se registran en eureka
+
+product-service tiene una api-rest 
+
+checkout-service consume la api que expone product-service
+
+vamos a usar una libreria llamada feing, que es la recomendada por spring-cloud
+
+tiene integracion con eureka, se pueden hacer peticiones a otros servicios por el nombre
+
+facil escalabilidad
+
+------------------------------------------------------------------
+
+https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/#netflix-feign-starter
+
+Feing es un cliente rest declarativo, para usar feing se debe crear una interface y agregar las anotaciones correspondientes.
+
+
