@@ -5,10 +5,21 @@ public class Product {
     private String id;
     private String description;
 
-    public Product(String id, String description, Double price) {
+    private String instancia;
+
+    public Product(String id, String description, Double price,String instancia) {
         this.id = id;
         this.description = description;
         this.price = price;
+        this.instancia = instancia;
+    }
+
+    public String getInstancia() {
+        return instancia;
+    }
+
+    public void setInstancia(String instancia) {
+        this.instancia = instancia;
     }
 
     public String getId() {

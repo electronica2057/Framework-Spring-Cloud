@@ -25,6 +25,7 @@ public class CheckoutService implements ICheckoutService {
              ) {
             Product product = productService.getProducts(id);
             total += product.getPrice();
+            System.out.println(product.getInstancia());
 
 
         }
